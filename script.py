@@ -18,6 +18,7 @@ def main():
     save_experiment_json("args", vars(args))
 
     logging.info(f"Running script.py with args:\n{pprint.pformat(vars(args))}")
+    logging.info(f"This file has changed!")
 
 
 if __name__ == "__main__":

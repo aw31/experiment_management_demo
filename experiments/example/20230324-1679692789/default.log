@@ -1,0 +1,23 @@
+2023-03-24 14:19:49 INFO [utils.py:103] Logging to /Users/awei/Projects/experiment_management_demo/experiments/example/20230324-1679692789/default.log
+2023-03-24 14:19:49 INFO [utils.py:65] hostname: awei-mbp
+2023-03-24 14:19:49 INFO [utils.py:65] pwd: /Users/awei/Projects/experiment_management_demo
+2023-03-24 14:19:49 INFO [utils.py:65] Command: python3 script.py --handle example
+2023-03-24 14:19:49 INFO [utils.py:65] Git hash: 3b90f1684443e10580527868aabaea61afe5c527
+2023-03-24 14:19:49 INFO [utils.py:65] Git diff:
+diff --git a/script.py b/script.py
+index d9ef47b..f6ddbc9 100644
+--- a/script.py
++++ b/script.py
+@@ -18,6 +18,7 @@ def main():
+     save_experiment_json("args", vars(args))
+ 
+     logging.info(f"Running script.py with args:\n{pprint.pformat(vars(args))}")
++    logging.info(f"This file has changed!")
+ 
+ 
+ if __name__ == "__main__":
+2023-03-24 14:19:49 INFO [utils.py:127] Saved experiment replication_info to /Users/awei/Projects/experiment_management_demo/experiments/example/20230324-1679692789/replication_info.json
+2023-03-24 14:19:49 INFO [utils.py:127] Saved experiment args to /Users/awei/Projects/experiment_management_demo/experiments/example/20230324-1679692789/args.json
+2023-03-24 14:19:49 INFO [script.py:20] Running script.py with args:
+{'comment': 'This is an example experiment', 'handle': 'example'}
+2023-03-24 14:19:49 INFO [script.py:21] This file has changed!
